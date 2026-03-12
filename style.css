@@ -1,0 +1,98 @@
+/* Reset e corpo */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('wallpaper.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Fundo sem interferir no texto */
+section, header, footer {
+    background-color: rgba(0,0,0,0.7); /* caixa semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* Cabeçalho */
+header h1 { color: red; margin-bottom: 10px; }
+
+/* Botões principais */
+.botao {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.botao:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.05);
+}
+
+/* Botão voltar */
+.botao-voltar {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.botao-voltar:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Imagens de detalhe */
+.img-detalhe {
+    max-width: 500px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px #000;
+}
+
+/* Galeria */
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.galeria img {
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.galeria img:hover {
+    transform: scale(1.1);
+    border-color: red;
+}
+
+/* Artigos de notícias */
+article {
+    background-color: rgba(34,34,34,0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Seções */
+section { padding: 40px 20px; }
+
+/* Footer */
+footer { background-color: rgba(0,0,0,0.8); padding: 20px; margin-top: 20px; border-radius: 10px; }
